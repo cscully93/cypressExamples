@@ -1,9 +1,11 @@
 ## Some simple Cypress examples
 
 **To setup project**
-May not be needeed
+
+May not be needed
 
 ``` npm init -y ```
+
 Needed
 
 ``` install npm ```
