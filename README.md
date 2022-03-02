@@ -8,7 +8,6 @@
 
  ``` npm install cypress --save-dev ```
 
-okay great, lets go!!!!
 
 **Run tests**
 
@@ -17,3 +16,5 @@ Headless
  
  Browser
  ``` npx cypress open ```
+
+*Okay great, lets go!!!!*
