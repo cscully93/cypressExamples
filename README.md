@@ -1,6 +1,6 @@
 ## Some simple Cypress examples
 
-**To setup project
+**To setup project**
 
 ``` npm init -y ```
 
@@ -10,7 +10,7 @@
 
 okay great, lets go!!!!
 
-**Run tests
+**Run tests**
 
 Headless
  ``` npx cypress run ```
