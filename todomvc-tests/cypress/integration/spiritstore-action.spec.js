@@ -10,7 +10,7 @@ describe('SpiritStore actions', () => {
         cy.get(':nth-child(1) > .listings-button-box > .event-button').click()
         cy.get('.event-header > h1').should('be.visible')
         
-        //Un-comment when ticket for gig available to buy
+        //Un-comment lines when tickets for gig are available for purchase
 
         // cy.get('[id=quantity]').select('3')
         // cy.get('.paypal_btn').click()
