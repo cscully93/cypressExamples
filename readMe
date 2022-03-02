@@ -8,4 +8,6 @@ To setup project
 
 ``` npm install cypress --save-dev ```
 
+ ``` mvn verify ``` 
+
 okay great, lets go!!!!
