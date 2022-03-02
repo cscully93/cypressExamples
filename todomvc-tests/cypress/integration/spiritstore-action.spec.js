@@ -9,8 +9,11 @@ describe('SpiritStore actions', () => {
     it('Navigate to most recent announced gig, Select three tickets and click PayPal button', () => {
         cy.get(':nth-child(1) > .listings-button-box > .event-button').click()
         cy.get('.event-header > h1').should('be.visible')
-        cy.get('[id=quantity]').select('3')
-        cy.get('.paypal_btn').click()
+        
+        //Un-comment when ticket for gig available to buy
+
+        // cy.get('[id=quantity]').select('3')
+        // cy.get('.paypal_btn').click()
     })
 
     it('Navigate to "About" page and scroll down page', () => {
