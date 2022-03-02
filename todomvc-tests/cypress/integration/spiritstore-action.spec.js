@@ -6,7 +6,7 @@ describe('SpiritStore actions', () => {
         cy.visit('https://www.spiritstore.ie/')
     })
 
-    it('Navigate to most recent announced gig, Select three tickets and click PayPal button', () => {
+    it('Navigate to most recent announced gig', () => {
         cy.get(':nth-child(1) > .listings-button-box > .event-button').click()
         cy.get('.event-header > h1').should('be.visible')
         
