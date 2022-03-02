@@ -22,3 +22,6 @@ Headless
  ``` npx cypress open ```
 
 *Okay great, lets go!!!!*
+
+Also don't forget to update your ApliTools API key, steps here:
+https://applitools.com/tutorials/getting-started/setting-up-your-environment.html
