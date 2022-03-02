@@ -16,4 +16,4 @@ Headless
  ``` npx cypress run ```
  
  Browser
- ``` npx cypress run ```
+ ``` npx cypress open ```
