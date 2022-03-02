@@ -2,12 +2,10 @@ Some simple Cypress examples
 
 To setup project
 
-``` npm init -y ```
+< npm init -y >
 
-``` install npm ```
+< install npm >
 
-``` npm install cypress --save-dev ```
-
- ``` mvn verify ``` 
+< npm install cypress --save-dev >
 
 okay great, lets go!!!!
