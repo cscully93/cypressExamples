@@ -9,3 +9,11 @@ To setup project
  ``` npm install cypress --save-dev ```
 
 okay great, lets go!!!!
+
+Run tests
+
+Headless
+ ``` npx cypress run ```
+ 
+ Browser
+ ``` npx cypress run ```
