@@ -2,7 +2,5 @@
     "watchForFileChanges": false,
     "viewportWidth": 1500,
     "viewportHeight": 860,
-    "env": {
-        "baseUrl": "https://www.spiritstore.ie/"   
-    }
+    "baseUrl": "https://www.spiritstore.ie/"       
 }
