@@ -1,27 +1,30 @@
 ///<reference types="cypress"/>
 
-import {clickPayPalBtn,startFromHomepage,navigateToMostRecentGig,verifyPayPalSite,navigateToTab,scrollToEmail,typeIntoEmailField,selectTickets} from "../page-objects/spiritStoreHomepage";
+import * as spiritStoreHomepage from "../page-objects/spiritStoreHomepage";
 
 describe("SpiritStore actions", () => {
 
   beforeEach(() => {
-    startFromHomepage();
+    spiritStoreHomepage.startFromHomepage();
   });
+
   it("Navigate to most recent announced gig", () => {
-    navigateToMostRecentGig();
+    spiritStoreHomepage.navigateToMostRecentGig();
     // Un-comment lines when tickets for gig are available for purchase
-    selectTickets("3");
-    clickPayPalBtn();
-    clickPayPalBtn();
-    verifyPayPalSite();
+    spiritStoreHomepage.selectTickets("3");
+    spiritStoreHomepage.clickPayPalBtn();
+    spiritStoreHomepage.clickPayPalBtn();
+    spiritStoreHomepage.verifyPayPalSite();
   });
+
   it('Navigate to "About" page and scroll down page', () => {
-    navigateToTab("About");
-    scrollToEmail();
+    spiritStoreHomepage.navigateToTab("About");
+    spiritStoreHomepage.scrollToEmail();
   });
+  
   it('Navigate to "Bar" page and input text into Newsletter email field', () => {
-    navigateToTab("Bar");
-    typeIntoEmailField();
+    spiritStoreHomepage.navigateToTab("Bar");
+    spiritStoreHomepage.typeIntoEmailField();
   });
 
 });
