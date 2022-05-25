@@ -9,6 +9,7 @@ const emailField = "#mce-EMAIL";
 export function startFromHomepage() {
   cy.visit("/");
 }
+
 export function navigateToMostRecentGig() {
   cy.get(mostRecentGigButton).click();
   cy.get(eventHeader).should("be.visible");
