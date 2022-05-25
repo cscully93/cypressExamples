@@ -1,5 +1,6 @@
 {
     "text": {
-        "emailField": "This is a cypress test"
+        "emailFieldInput": "This is a cypress test",
+        "payPalUrl":"www.paypal.com"
     }
 }
