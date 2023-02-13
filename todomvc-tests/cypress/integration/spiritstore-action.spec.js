@@ -13,10 +13,7 @@ describe("SpiritStore actions", () => {
     spiritStoreHomepage.navigateToMostRecentGig();
     // Un-comment lines when tickets for gig are available for purchase
     spiritStoreGigPage.verifyOnGig();
-    spiritStoreGigPage.selectTickets("3");
-    spiritStoreGigPage.clickPayPalBtn();
-    spiritStoreGigPage.clickPayPalBtn();
-    spiritStoreGigPage.verifyPayPalSite();
+    spiritStoreGigPage.checkTicketsAvailable();
   });
 
   it('Navigate to "About" page and scroll down page', () => {
