@@ -3,6 +3,7 @@
 const eventHeader = ".event-header > h1";
 const ticketQuantitySelector = "[id=quantity]";
 const paypalBtn = ".paypal_btn";
+const consentCheckBox = "#non-refundable"
 
 
 export function verifyOnGig(){
@@ -16,6 +17,7 @@ export function checkTicketsAvailable(){
         cy.get(ticketQuantitySelector).then($header => {
           if ($header.is(':visible')){
             selectTickets("3");
+            checkConsentTicketBox();
             clickPayPalBtn();
             clickPayPalBtn();
             verifyPayPalSite();
@@ -32,6 +34,10 @@ export function checkTicketsAvailable(){
     cy.get(ticketQuantitySelector).select(numTickets);
   }
   
+  export function checkConsentTicketBox() {
+    cy.get(consentCheckBox).check();
+  }
+
   export function clickPayPalBtn() {
     cy.get(paypalBtn).click();
   }
