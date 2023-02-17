@@ -14,8 +14,8 @@ export function checkTicketsAvailable(){
   cy.get("body").then($body => {
     if ($body.find(ticketQuantitySelector).length > 0) {   
     //evaluates as true if button exists at all
-        cy.get(ticketQuantitySelector).then($header => {
-          if ($header.is(':visible')){
+        cy.get(ticketQuantitySelector).then($selector => {
+          if ($selector.is(':visible')){
             selectTickets("3");
             checkConsentTicketBox();
             clickPayPalBtn();
